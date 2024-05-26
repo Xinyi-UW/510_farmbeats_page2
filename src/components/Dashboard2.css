@@ -1,0 +1,165 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #F7F7F7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6D8C54;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.profile img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #F7F7F7;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #6D8C54;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 800px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #8AA770;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #A3C584;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  color: #6D8C54;
+}
+
+.date-selector button {
+  background-color: #F7C35F;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.date-selector button:hover {
+  background-color: #E0AC50;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture {
+  background-color: #e0e0e0;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.peaewevil-num {
+  display: flex;
+  align-items: center;
+}
+
+.peaewevil-num button {
+  background-color: #F7C35F;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.peaewevil-num button:hover {
+  background-color: #E0AC50;
+}
+
+.controls {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls h3 {
+  color: #6D8C54;
+}
+
+.controls input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.controls button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #F7C35F;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #E0AC50;
+}
