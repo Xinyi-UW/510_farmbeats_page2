@@ -4,7 +4,7 @@
 
 npm install react-scripts
 
-# To kick start
+# kick start
 
 npm start
 
