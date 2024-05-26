@@ -10,6 +10,25 @@ npm start
 
 ---
 
+# co-work
+
+# How to update new feature and send push request
+
+git checkout -b add-new-feature
+
+#
+
+git add .
+git commit -m "Add new feature"
+git push origin add-new-feature
+
+# How to pull and update the latest version to your local
+
+git checkout main
+git pull origin main
+
+---
+
 ## Available Scripts, originally from react package
 
 In the project directory, you can run:
