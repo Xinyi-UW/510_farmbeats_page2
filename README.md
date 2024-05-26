@@ -1,6 +1,6 @@
 # Getting Started with previous code
 
-# Cuz I gitignored node_modules, so you need to download node_modules using below command
+# Cuz I gitignored node_modules, so you need to download node_modules by below command
 
 npm install react-scripts
 
