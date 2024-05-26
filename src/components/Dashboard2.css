@@ -1,7 +1,15 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to top, #6D8C54, #F7C35F);
+  height: 250vh;
+}
+
 .dashboard {
   display: flex;
   flex-direction: column;
   height: 100vh;
+
 }
 
 header {
@@ -66,7 +74,7 @@ main {
 .content {
   flex-grow: 1;
   padding: 20px;
-  background-color: white;
+  background: linear-gradient(to top, #6D8C54, #F7C35F);
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -164,14 +172,14 @@ main {
 
 .controls {
   width: 200px;
-  background-color: #f0f0f0;
+  background-color: #6D8C54;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .controls h3 {
-  color: #6D8C54;
+  color: white;
 }
 
 .controls input {
