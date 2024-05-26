@@ -1,8 +1,16 @@
-# Getting Started with Create React App
+# Getting Started with previous code
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Cuz I gitignored node_modules, so you need to download node_modules using below command
 
-## Available Scripts
+npm install react-scripts
+
+# To kick start
+
+npm start
+
+---
+
+## Available Scripts, originally from react package
 
 In the project directory, you can run:
 
