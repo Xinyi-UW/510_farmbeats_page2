@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  font-family: Arial, sans-serif;
-  background-color: #F7F7F7;
 }
 
 header {
@@ -39,13 +37,12 @@ main {
 }
 
 .sidebar {
-  width: 200px;
+  width: 100px;
   background-color: #6D8C54;
   color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  height: 800px;
 }
 
 .sidebar ul {
@@ -85,6 +82,11 @@ main {
   color: #6D8C54;
 }
 
+.date-selector {
+  display: flex;
+  align-items: center;
+}
+
 .date-selector button {
   background-color: #F7C35F;
   border: none;
@@ -99,29 +101,58 @@ main {
   background-color: #E0AC50;
 }
 
+.date-picker {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  width: 150px;
+  text-align: center;
+}
+
 .pictures {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .picture {
+  display: flex;
+  align-items: center;
   background-color: #e0e0e0;
-  margin-bottom: 15px;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.picture img.testimage {
+  width: 450px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.picture-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.picture-time {
+  font-size: 14px;
+  color: #6D8C54;
+}
+
 .peaewevil-num {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .peaewevil-num button {
   background-color: #F7C35F;
   border: none;
   padding: 5px 10px;
-  margin: 0 5px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -160,6 +191,25 @@ main {
   transition: background-color 0.3s;
 }
 
+
 .controls button:hover {
+  background-color: #E0AC50;
+}
+
+.controls .biggerbutton {
+  display: block;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #F7C35F;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.controls .biggerbutton:hover {
   background-color: #E0AC50;
 }
