@@ -1,0 +1,189 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    bbackground: linear-gradient(to top, #6D8C54, #F7C35F);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 60px;
+    background-color: #6D8C54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    background-color: #6D8C54;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header .logo {
+    height: 40px;
+  }
+  
+  .dashboard-section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .chart-section,
+  .device-list {
+    width: 1000px;
+    flex: 1;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-section {
+    width: 65%;
+  }
+  
+  .device-item {
+    transition: background-color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .device-item:hover {
+    background-color: #F7C35F;
+  }
+  
+  .warning-item {
+    transition: background-color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .warning-item:hover {
+    background-color: #F87171;
+  }
+  
+  .contact-section {
+    background-color: #ffc107;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #45a049;
+  }
+  
+  .chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .chatbot:hover {
+    background-color: #45a049;
+  }
+  
+  .chatbot-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .chatbot-header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .chatbot-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chatbot-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .chatbot-input button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .chatbot-input button:hover {
+    background-color: #45a049;
+  }
+  

@@ -6,6 +6,7 @@ import testimage3 from '../assets/images/farm3.png';
 import logo1 from '../assets/images/logo.jpg';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import { Link } from 'react-router-dom';
 
 function Dashboard2() {
   const [startDate, setStartDate] = useState(new Date());
@@ -28,13 +29,13 @@ function Dashboard2() {
       <main>
         <div className="sidebar">
           <ul>
-            <li>Home</li>
+            <Link to="/" className="home-link">Home</Link>
             <li>Library</li>
             <li>Settings</li>
           </ul>
         </div>
         <div className="content">
-          <div className="header">
+          <div className="header2">
             <h2>Device 1 Picture Library</h2>
             <div className="date-selector">
               <button>&lt;</button>
@@ -100,3 +101,4 @@ function Dashboard2() {
 }
 
 export default Dashboard2;
+

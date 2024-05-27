@@ -45,7 +45,7 @@ main {
 }
 
 .sidebar {
-  width: 100px;
+  width: 350px;
   background-color: #6D8C54;
   color: white;
   padding: 20px;
@@ -56,18 +56,29 @@ main {
 .sidebar ul {
   list-style-type: none;
   padding: 0;
+  margin: 0; /* 确保没有多余的外边距 */
 }
 
-.sidebar li {
+.sidebar li,
+.home-link {
+  display: block;
   margin-bottom: 15px;
   padding: 10px;
+  width: calc(100% - 20px); /* 调整按钮宽度以比侧边栏窄 */
+  margin-left: auto; /* 使按钮在侧边栏中居中 */
+  margin-right: auto; /* 使按钮在侧边栏中居中 */
   background-color: #8AA770;
   border-radius: 5px;
   cursor: pointer;
+  text-align: center; /* 确保文本居中对齐 */
+  text-decoration: none; /* 确保链接没有下划线 */
+  color: white; /* 确保链接文本颜色与其他按钮一致 */
   transition: background-color 0.3s;
+  box-sizing: border-box; /* 确保填充不会影响宽度计算 */
 }
 
-.sidebar li:hover {
+.sidebar li:hover,
+.home-link:hover {
   background-color: #A3C584;
 }
 
@@ -79,14 +90,14 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header {
+.header2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.header h2 {
+.header2 h2 {
   color: #6D8C54;
 }
 
@@ -96,7 +107,7 @@ main {
 }
 
 .date-selector button {
-  background-color: #F7C35F;
+  background-color: #6D8C54;
   border: none;
   padding: 5px 10px;
   margin: 0 5px;
@@ -221,3 +232,7 @@ main {
 .controls .biggerbutton:hover {
   background-color: #E0AC50;
 }
+
+
+
+

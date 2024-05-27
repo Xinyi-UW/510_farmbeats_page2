@@ -14,3 +14,17 @@ export const getSomeData = async () => {
     throw error;
   }
 };
+
+export const getChatCompletion = async (prompt) => {
+  try {
+    const response = await instance.post('/completions', {
+      model: "text-davinci-003",
+      prompt: prompt,
+      max_tokens: 150
+    });
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching chat completion:', error);
+    throw error;
+  }
+};
